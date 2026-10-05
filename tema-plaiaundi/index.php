@@ -1,5 +1,5 @@
+<body>
 <?php get_header(); ?>
-
     <main>
 
         <?php if (have_posts()) { ?>
@@ -7,12 +7,12 @@
             <?php while (have_posts()) { ?>
 
                 <?php the_post(); ?>
-
-                <article>
-
-                    <?php if (has_post_thumbnail()) { ?>
+                
+                <?php if (has_post_thumbnail()) { ?>
                         <?php the_post_thumbnail(); ?>
                     <?php } ?>
+
+                <article>
 
                     <h2>
                         <a href="<?php the_permalink(); ?>">
@@ -29,7 +29,11 @@
                         Categorías: <?php the_category(', '); ?>
                     </p>
 
-                    <?php the_excerpt(); ?>
+		            <p>
+			            Etiquetas: <?php the_tags(' '); ?>
+		            </p>
+
+                    <?php the_content(); ?>
 
                 </article>
 

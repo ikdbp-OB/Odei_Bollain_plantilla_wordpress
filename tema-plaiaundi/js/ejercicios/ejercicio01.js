@@ -3,14 +3,10 @@
  * Ejercicio 1 · ¿Qué tipo tengo realmente?
  */
 
-const numero = 42;
-const texto = '42';
-const lista = [1, 2, 3];
-const datoNulo = null;
-const resultado = NaN;
+let nombre = prompt("nombre");
+let edad = Number(prompt("edad"));
+let altura = Number(prompt("altura"));
 
-console.log('Número:', typeof numero);
-console.log('Texto:', typeof texto);
-console.log('Array:', typeof lista, '¿Es un array?', Array.isArray(lista));
-console.log('Null:', typeof datoNulo);
-console.log('NaN:', typeof resultado);
+console.log('Nombre:', typeof nombre);
+console.log('Edad:', typeof edad);
+console.log('Altura:', typeof altura);
