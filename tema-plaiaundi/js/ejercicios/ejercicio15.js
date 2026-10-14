@@ -3,10 +3,16 @@
  * Ejercicio 15 · Prueba
  */
 
-let nombre = prompt("nombre");
-let edad = Number(prompt("edad"));
-let altura = Number(prompt("altura"));
+let numero = Number(prompt("Indica un numero"));
 
-console.log('Nombre:', typeof nombre);
-console.log('Edad:', typeof edad);
-console.log('Altura:', typeof altura);
+const resultado = (numero) => {
+
+    if (numero % 2 == 0){
+        resul = "PAR";
+    }else{
+        resul = "INPAR";
+    }
+    return resul;
+}
+
+console.log(resultado);

@@ -1,5 +1,5 @@
 <body>
-<?php get_header(); ?>
+    <?php get_header(); ?>
     <main>
 
         <?php if (have_posts()) { ?>
@@ -47,6 +47,4 @@
 
     </main>
 
-</body>
-
-</html>
+<?php wp_footer(); ?>
