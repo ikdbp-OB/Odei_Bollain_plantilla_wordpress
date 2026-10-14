@@ -118,3 +118,5 @@ WORDPRESS_PORT=8082
 ```
 
 y WordPress estará disponible en `http://localhost:8082`.
+
+https://docs.google.com/document/d/13n-uH3dg613Ty46vNjeN0Xaxf3rPqVF5sZsQAsX8jhI/edit?usp=sharing
