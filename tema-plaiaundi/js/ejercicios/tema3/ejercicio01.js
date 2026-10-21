@@ -1,0 +1,4 @@
+function esPar() {
+    
+    return arguments;
+}
