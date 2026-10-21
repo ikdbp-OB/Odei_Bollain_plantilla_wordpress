@@ -20,7 +20,7 @@ $titulos_ejercicios = array(
     '|| frente a ??',
     'Operador ternario: cuándo ayuda y cuándo no',
     'Diagnóstico de código',
-    'Prueba',
+    'Pruebas',
 );
 ?>
 

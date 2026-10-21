@@ -1,5 +1,5 @@
-<body>
-    <?php get_header(); ?>
+<?php get_header(); ?>
+
     <main>
 
         <?php if (have_posts()) { ?>
@@ -7,12 +7,12 @@
             <?php while (have_posts()) { ?>
 
                 <?php the_post(); ?>
-                
-                <?php if (has_post_thumbnail()) { ?>
-                        <?php the_post_thumbnail(); ?>
-                    <?php } ?>
 
                 <article>
+
+                    <?php if (has_post_thumbnail()) { ?>
+                        <?php the_post_thumbnail(); ?>
+                    <?php } ?>
 
                     <h2>
                         <a href="<?php the_permalink(); ?>">
@@ -28,12 +28,11 @@
                     <p>
                         Categorías: <?php the_category(', '); ?>
                     </p>
+                       <p>
+                        Etiquetas: <?php the_tags('#',' ?'); ?>
+                    </p>
 
-		            <p>
-			            Etiquetas: <?php the_tags(' '); ?>
-		            </p>
-
-                    <?php the_content(); ?>
+                    <?php the_excerpt(); ?>
 
                 </article>
 
@@ -47,4 +46,4 @@
 
     </main>
 
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
